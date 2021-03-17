@@ -1,0 +1,121 @@
+.Console
+{
+    width:400px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(23, 23, 26); 
+    border: 1px solid rgba(80, 80, 80, .5);
+}
+.ConsoleOptions
+{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(80, 80, 80, .5);
+}
+.ConsoleOptions button
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color:white;
+    font-size: 1.2em;
+    transition: all .2s ease-in-out;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+}
+.ConsoleOptions button:hover
+{
+    backdrop-filter: brightness(2);
+}
+.ConsoleOptions button i
+{
+    transition: all .2s ease-in-out;
+}
+.clear:hover i
+{
+   transform: rotate(-10deg);
+}
+.message:hover
+{
+    border-bottom: 2px solid #1F63B4; 
+}
+.error:hover
+{
+    border-bottom: 2px solid #ff6347;
+}
+.warn:hover
+{
+    border-bottom: 2px solid #FFEF4A;
+}
+
+
+.mes
+{
+
+}
+.err
+{
+    color:#ff6347;
+}
+.war
+{
+    color: #FFEF4A;
+}
+
+
+.search
+{
+    position: relative;
+}
+.search textarea
+{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    width:200%;
+    height:2px;
+    background-color: white;
+    transform-origin: right;
+    transform:scaleX(0);
+    transition: all .2s ease-in-out;
+}
+.search i
+{
+
+}
+.search:focus textarea
+{
+    transform:scaleX(1);
+}
+.search:focus i
+{
+   display: none;
+}
+
+.ConsoleContent
+{
+    width:100%;
+    padding: 2px;
+    letter-spacing: .7px;
+}
+.ConsoleContent textarea
+{
+    resize:vertical;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(80, 80, 80, .5); 
+    color:white;
+    width: 95%;
+    min-height: 15px;
+    height: auto;
+    max-height: 500px;
+}
+.ConsoleValue
+{
+    width:100%;
+    padding: 2px;
+    border-bottom: 1px solid rgba(80, 80, 80, .5);
+}

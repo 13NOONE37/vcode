@@ -1,0 +1,73 @@
+.Edit
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow:scroll;
+}
+
+.Edit::-webkit-scrollbar {
+    width: 7px;          
+    height: 7px;
+  }
+.Edit::-webkit-scrollbar-track {
+          
+      background-color:  rgba(80, 80, 80, .1); 
+  }
+.Edit::-webkit-scrollbar-thumb {
+    background-color: rgb(80, 80, 80);    /* color of the scroll thumb */
+    border-radius: 20px; /* creates padding around scroll thumb */
+  }
+
+
+.Edit textarea
+{
+    width:100%;
+    height: 100%;
+    padding: 4px;
+    resize: none;
+    background-color: transparent;
+    color:white;
+    font-size:1.1em;
+    outline: none;
+    border:none;
+    caret-color: wheat;
+}
+
+
+.line
+{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+}
+.lineFocused
+{
+    backdrop-filter: brightness(2.5);
+}
+.lineContent
+{
+    font-family: Consolas,"courier new";
+    color: burlywood;
+    padding: 4px;
+    font-size: 95%;
+    margin-left: 12px;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.lineNumber
+{
+    color:rgba(255, 255, 255, 0.4);
+    padding: 4px;
+    position: fixed;
+    background-color: rgb(26, 27, 32);
+}
+.numberFocused
+{
+    color:rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,46 @@
+ zakladki jakie maja byc, tylko ze zrobimy je na headera oraz 
+
+ jeden komponenet header bedzie uzywany dla wielu aplikacji jednakze w propsa bedzie przyjmowal obiekt ktory zawiera ParentItem ChildItems dla ktorych beda poszczegolne funkcje rowniez przekazywane w propsach. nasz header bedzie tylko renderowal odpowiendio skonfigurowany header.
+ (postarać sie tez trzeba aby wszystkie potrzebne rzeczy przechowywac w zewnetrzynym pliku np. /utils/headerItems.js a w nim podpiete wszystkie funkcje itd.)
+ <div className="header">
+             <button className="headerItem">
+                 File
+                 <ul>
+                     <li>New File</li>
+                        <div className="devider"></div>
+                     <li info="po klknieciu niech sie wyswietli kwadrat na srodku w ktorym beda  elementy ostatnie projekty, zaladuj z komputera, zaladuj z githuba, zaladuj z dysku google">Open Project</li>
+                     <li info="przekierowanie bezposrednio do ostatnich projektow">Open Recent</li>
+                        <div className="devider"></div>
+                     <li>Save</li>
+                     <li>Save as</li>
+                        <div className="devider"></div>
+                     <li info="downolad na dysk">Download file</li>
+                     <li info="downolad na dysk">Download Project</li>
+                 </ul>
+             </button>
+             <button className="headerItem">
+                 Edit
+                <ul>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                 </ul>
+             </button>
+             <button className="headerItem">
+                 View
+                <ul>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                 </ul>
+             </button>
+             <button className="headerItem">
+                Preferences
+                <ul>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                 </ul>
+             </button>
+             <button className="headerItem">Tips</button>
+             <button className="headerItem">Donation</button>

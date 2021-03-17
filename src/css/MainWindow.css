@@ -1,0 +1,31 @@
+.MainWindow
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+.react-resizable-handle-se
+{
+    height:100%;
+    background-color: rgb(80, 80, 80);
+    padding: 2px;
+    cursor: col-resize;
+    box-shadow: 1px 1px 1px #122, 
+                -1px 1px 1px #122,
+                -1px -1px 1px #122,
+                1px -1px 1px #122;
+    /* transition: all .5s ease-in-out;
+    transform-origin: center; */
+}
+.resizableElement
+{
+    height: 100%;
+}
+.resizableElement:nth-child(1)
+{
+    max-width: 400px;
+}
+.resizableElement:last-child
+{
+    
+}

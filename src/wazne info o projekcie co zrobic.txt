@@ -1,0 +1,20 @@
+wczytywanie plikow
+zapis plikow
+
+aktualna linia i kolumna - ustawianie state
+
+tree - tworzenie struktury, przekazywanie aktualniego wybranego do edita i jego properties do footera i headera (wyswietlenie nazwy aktualnego pliku)
+
+edit - zasady, aktualna pozycja, focusowanie lini (zrobic na divach), numery
+
+
+
+
+word wrap - domyslnie wylaczone i linie trzeba przewijac, dodac opcje w headerze
+
+
+praktycznie zrobione, ewentualnie poprawki ktore moga byc wprowadzone dopiero pozniej:
+Konsola - wyświetlanie błedów, jakie i pop up
+obsługa błędów - liczba i wyświelanie pop upa
+
+resizable - lekkie bugi
