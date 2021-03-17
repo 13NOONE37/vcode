@@ -1,16 +1,29 @@
 wczytywanie plikow
 zapis plikow
+tree - tworzenie struktury, przekazywanie aktualniego wybranego do edita i jego properties do footera i headera (wyswietlenie nazwy aktualnego pliku) pobieranie z api googla
 
 aktualna linia i kolumna - ustawianie state
-
-tree - tworzenie struktury, przekazywanie aktualniego wybranego do edita i jego properties do footera i headera (wyswietlenie nazwy aktualnego pliku)
-
 edit - zasady, aktualna pozycja, focusowanie lini (zrobic na divach), numery
-
-
-
+:
+- wprowadzanie tekstu
+- kazda spacja musi odzielac slowa jak i slowa kluczowe musza rozdzielac sie same do osobnych spanow
+- decydowanie czym dany span jest (zmienna funkcja itd. ) a nastepnie przypisywnie mu odpowiedniej klasy
+- featury type nawiasy itd.
+- dodawanie lini
+-  
 
 word wrap - domyslnie wylaczone i linie trzeba przewijac, dodac opcje w headerze
+
+
+
+
+
+
+
+
+
+
+
 
 
 praktycznie zrobione, ewentualnie poprawki ktore moga byc wprowadzone dopiero pozniej:

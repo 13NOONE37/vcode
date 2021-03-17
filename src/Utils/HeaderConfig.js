@@ -59,6 +59,13 @@ export default [
             shortcut: 'obmyslic sposob przekazywania skrotow, moze byc np. ctrl_b',
             devider: true,
         },
+        {
+            childItem: 'Preferences',
+            handleAction: null,
+            handleWindow: <SaveAs/>,
+            shortcut: 'obmyslic sposob przekazywania skrotow, moze byc np. ctrl_b',
+            devider: false,
+        },
     ]
 },
 
@@ -72,13 +79,6 @@ export default [
             handleAction: tempAction,
             shortcut: 'obmyslic sposob przekazywania skrotow, moze byc np. ctrl_b',
         },
-    ]
-},
-
-{
-    parentItem: 'Settings',
-    childItems: [
-        
     ]
 },
 
