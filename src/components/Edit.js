@@ -4,15 +4,16 @@ import '../css/Edit.css';
 export default function Edit(props) {
     
     const textarea = useRef(null);
+
     const [textValue, settextValue] = useState([
-        {       isClicked: false,
+        {  
                 line: [
                     'hello',
                     ' ',
                     '1'
                 ],
         },
-        {       isClicked: false,
+        {  
             line: [
                 'hello',
                     ' ',
@@ -39,21 +40,21 @@ export default function Edit(props) {
                     
             ],
         },
-        {       isClicked: false,
+        {  
             line: [
                 'hello',
                 ' ',
                 '1'
             ],
         },
-        {       isClicked: false,
+        { 
             line: [
                 'hello',
                 ' ',
                 '1'
             ],
         },
-        {       isClicked: false,
+        {  
             line: [
                 'hello',
                 ' ',
@@ -63,28 +64,29 @@ export default function Edit(props) {
     
     ]);
     
-    
-    
 
+    /**TODO wyciąć do pliku ../Utils/EditActions/Shortcuts.js */
+    const handleDuplicateLine = (e) => {
+        e.preventDefault();
+        if(e.ctrlKey && e.keyCode==68){
+            const temp = [...textValue].slice(0, e.target.tabIndex).concat([...textValue].slice(e.target.tabIndex-1, e.target.tabIndex)).concat([...textValue].slice(e.target.tabIndex, textValue.length));
+            settextValue(temp);
+        }
+    };
 
-    function handleFocusStop(e){
-         e.target.className="line ";
-    }
-/**rozwiazac wyswietlanie nie poprzez text area a divy z numerami lini przed jak tu https://jsfiddle.net/ourcodeworld/o4k7rfu0/1/  */
-  
+    const handlePutCursor = (e) => {
+        console.log(e.target);
+        if(e.target)
+        e.target.innerHTML+="<span class='cursor'>|</span>";
+    };
+    //kursor <i class="cursor"></i>
 return (
-        <div className="Edit" onKeyDown={()=>{console.log("keydown")}}>
-
+        <div className="Edit" onClick={handlePutCursor}>
                 {
                     textValue.map((e, index) => {
                         return(
                             
-                            <div  onClick={(f)=>{
-                                                e.isClicked = !e.isClicked; 
-                                                if(e.isClicked) f.currentTarget.className=' lineFocused';
-                                                if(e.isClicked==false) f.currentTarget.className='line ';
-                                            }} 
-                                                className='line '>
+                            <div tabIndex={index+1} className="line " onKeyDown={handleDuplicateLine}>
                               
                                 <span className="lineNumber">{index+1}</span>
                                 <div className="lineContent">

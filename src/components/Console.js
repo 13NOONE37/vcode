@@ -8,10 +8,10 @@ export default function Console(props) {
     
     const [searchPhrase, setsearchPhrase] = useState('');
 
-   
+
 
     return (
-        <div className="Console">
+        <div className="Console">   
             <div className="ConsoleOptions">
                 <span>
                     <button onClick={()=>props.setShowed(false)}><i class="fas fa-arrow-left"></i></button>
