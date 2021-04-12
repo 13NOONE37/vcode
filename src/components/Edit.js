@@ -47,20 +47,6 @@ export default function Edit(props) {
                 '1'
             ],
         },
-        { 
-            line: [
-                'hello',
-                ' ',
-                '1'
-            ],
-        },
-        {  
-            line: [
-                'hello',
-                ' ',
-                '1'
-            ],
-        },
     
     ]);
     
@@ -76,10 +62,15 @@ export default function Edit(props) {
 
     const handlePutCursor = (e) => {
         console.log(e.target);
-        if(e.target)
-        e.target.innerHTML+="<span class='cursor'>|</span>";
+        // if(e.target)
+        // document.addEventListener("keydown", (k)=>{
+        //     e.target.innerHTML+=k.key;
+        // });
+    
+        // e.target.innerHTML+="<span class='cursor'>|</span>";
+        
     };
-    //kursor <i class="cursor"></i>
+    
 return (
         <div className="Edit" onClick={handlePutCursor}>
                 {
